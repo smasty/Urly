@@ -1,0 +1,16 @@
+Urly is a very small URL shortener written in PHP.
+
+Copyright (c) Martin Srank, http://smasty.net
+
+Licensed under the terms of the MIT license - http://opensource.org/licenses/mit-license
+
+
+Urly requires following SQL table to be created:
+
+CREATE TABLE "urly" (
+  "id" integer NOT NULL PRIMARY KEY AUTOINCREMENT,
+  "url" text NOT NULL
+);
+
+Urly uses Neevo for database manipulation,
+see http://neevo.smasty.net or http://github.com/smasty/Neevo

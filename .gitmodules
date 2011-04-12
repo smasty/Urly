@@ -1,0 +1,3 @@
+[submodule "neevo"]
+	path = neevo
+	url = git@github.com:smasty/Neevo.git
