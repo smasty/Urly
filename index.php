@@ -17,7 +17,7 @@ try{
 	define('TABLE', 'urly');
 
 	function isUrl($url){
-		return preg_match('/^(http|https|ftp):\/\/([A-Z0-9][A-Z0-9_-]*(?:\.[A-Z0-9][A-Z0-9_-]*)+):?(\d+)?\/?/i', $url);
+		return preg_match('/^(https?|ftps?):\/\/([A-Z0-9][A-Z0-9_-]*(?:\.[A-Z0-9][A-Z0-9_-]*)+):?(\d+)?\/?/i', $url);
 	}
 
 
