@@ -4,9 +4,7 @@
  * Licensed under the terms of the MIT license - http://opensource.org/licenses/mit-license
  */
 
-
 try{
-
 	require_once __DIR__ . '/neevo/neevo.php';
 
 	// Configure database connection
@@ -51,14 +49,15 @@ try{
 <<<FORM
 <form action="" method=post style="width:400px;margin:3em auto">
 	Your long URL:<br>
-	<input name=url size=50>
+	<input name=url id=url size=50>
 	<input type=submit>
 </form>
+<script>window.load = document.getElementById('url').focus();</script>
 FORM;
 	}
 
 
-// Catch all possible errors.
+// Catch everything
 } catch(Exception $e){
 	die("Error processing your request. Try again later.");
 }
